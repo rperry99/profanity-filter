@@ -4,6 +4,10 @@
   color: #333;
 }
 
+body {
+  position: relative;
+}
+
 /* INDEX.HTML */
 .button-container {
   display: flex;
@@ -41,16 +45,46 @@
 
 
 /* SPACE-CHANGER.HTML */
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background: #333;
+  box-sizing: border-box
+}
+
+nav p, nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav p {
+  font-size: 18px;
+}
+
+nav .buttons :first-child{
+  margin-right: 15px;
+}
+
+.main-container {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .input-container,
 .output-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-.input-container label {
+.input-container label, .output-container label{
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -67,6 +101,7 @@
 
 .output-container textarea {
   background: #eee;
+  height: calc(100% - 34px);
 }
 
 textarea {

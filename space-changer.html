@@ -8,35 +8,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Profanity List Generator</h1>
-    <div class="input-container">
-      <label for="word-list"
+    <nav>
+      <p>Space Changer</p>
+      <div class="buttons">
+        <a href="index.html">Home</a>
+        <a href="profanity.html">Profanity Demo</a>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="input-container">
+        <label for="word-list"
         >Enter the list of comma separated words or phrases.</label
-      >
-      <textarea name="wordlist" id="word-list" cols="30" rows="10"></textarea>
-      <label for="symbol-list"
+        >
+        <textarea name="wordlist" id="word-list" cols="30" rows="10"></textarea>
+        <label for="symbol-list"
         >Enter the list of all allowed symbols, separated by a comma. (Excluding
         spaces)</label
-      >
-      <textarea
+        >
+        <textarea
         name="symbollist"
         id="symbol-list"
         cols="30"
         rows="10"
-      ></textarea>
-      <button id="generate" onclick="generatePhraseList()">Generate</button>
-    </div>
-
-    <div class="output-container">
-      <label for="txt-output">TXT Output</label>
-      <textarea
+        ></textarea>
+        <button id="generate" onclick="generatePhraseList()">Generate</button>
+      </div>
+      
+      <div class="output-container">
+        <label for="txt-output">TXT Output</label>
+        <textarea
         name="txtoutput"
         id="txt-output"
         cols="30"
         rows="10"
         readonly
-      ></textarea>
+        ></textarea>
+      </div>
     </div>
-    <script src="app.js"></script>
+      <script src="app.js"></script>
   </body>
 </html>
