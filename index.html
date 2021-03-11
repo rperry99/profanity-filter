@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profanity List Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Profanity List Generator</h1>
-    <div class="input-container">
-      <label for="word-list"
-        >Enter the list of comma separated words or phrases.</label
-      >
-      <textarea name="wordlist" id="word-list" cols="30" rows="10"></textarea>
-      <label for="symbol-list"
-        >Enter the list of all allowed symbols, separated by a comma. (Excluding
-        spaces)</label
-      >
-      <textarea
-        name="symbollist"
-        id="symbol-list"
-        cols="30"
-        rows="10"
-      ></textarea>
-      <button id="generate" onclick="generatePhraseList()">Generate</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text-container">
+        <p>"Space Changer Demo" is the demo where you can enter in a comma separated list of words / phrases and a comma
+            separated list of symbols, and it will output a list of those words with their spaces changed to no spaces, and
+            any symbols entered in the list.</p>
+        <p>"Profanity Demo" is the demo where you can enter in a word with a bunch of letters, symbols, and numbers, and it
+            will translate it. Like "H3110 J@va$cr!p+" -> "Hello JavaScript".</p>
     </div>
-
-    <div class="output-container">
-      <label for="txt-output">TXT Output</label>
-      <textarea
-        name="txtoutput"
-        id="txt-output"
-        cols="30"
-        rows="10"
-        readonly
-      ></textarea>
+    <div class="button-container">
+        <a href="space-changer.html">Space Changer Demo</a>
+        <a href="profanity.html">Profanity Demo</a>
     </div>
-    <script src="app.js"></script>
-  </body>
+</body>
 </html>
