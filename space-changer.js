@@ -19,9 +19,10 @@ function generatePhraseList() {
   symbolArray.push(' ', '');
   //   console.log(phraseListArray, symbolArray);
   replaceSpaces(phraseListArray, symbolArray);
-  useNumberSymbols(spaceParsedArray);
-  finalParsedArray.push(...spaceParsedArray, ...numberSymbolsParsedArray);
-  txtOutput.value = finalParsedArray.join(', ');
+  textOutput.value = spaceParsedArray.join(', ');
+  // useNumberSymbols(spaceParsedArray);
+  // finalParsedArray.push(...spaceParsedArray, ...numberSymbolsParsedArray);
+  //txtOutput.value = finalParsedArray.join(', ');
 }
 
 function replaceSpaces(wordArr, symbolArr) {
