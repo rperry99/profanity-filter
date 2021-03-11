@@ -19,7 +19,7 @@ function generatePhraseList() {
   symbolArray.push(' ', '');
   //   console.log(phraseListArray, symbolArray);
   replaceSpaces(phraseListArray, symbolArray);
-  textOutput.value = spaceParsedArray.join(', ');
+  txtOutput.value = spaceParsedArray.join(', ');
   // useNumberSymbols(spaceParsedArray);
   // finalParsedArray.push(...spaceParsedArray, ...numberSymbolsParsedArray);
   //txtOutput.value = finalParsedArray.join(', ');
