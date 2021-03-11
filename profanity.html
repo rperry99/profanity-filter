@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<body>
+<body style='height: 100vh'>
     <nav>
-        <p>Space Changer</p>
+        <p>Profanity Checker</p>
         <div class="buttons">
             <a href="index.html">Home</a>
             <a href="space-changer.html">Space Changer Demo</a>
         </div>
     </nav>
+    <div class="profanity-container">
+        <div>
+            <label for="symbolizedInput">Enter a symbolized word or phrase (For example 'H31L0 Cl3v31@nD")</label>
+            <input type="text" name="symbolizedInput" id="symbolizedInput">
+        </div>
+        <div>
+            <label for="englishOutput">Output</label>
+            <input type="text" name="englishOutput" id="englishOutput" readonly>
+        </div>
+        <button onclick='translateText()'>Translate</button>
+    </div>
 </body>
 <script src="profanity.js"></script>
 
